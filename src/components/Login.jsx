@@ -39,6 +39,8 @@ const Login = () => {
               <input
                 type="text"
                 placeholder="Email or Username"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full bg-transparent border-none outline-none focus:outline-none"
               />
             </div>
@@ -47,6 +49,8 @@ const Login = () => {
               <input
                 type="password"
                 placeholder="Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
                 className="w-full bg-transparent border-none outline-none focus:outline-none"
               />
             </div>
